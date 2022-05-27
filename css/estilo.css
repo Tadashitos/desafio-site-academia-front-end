@@ -1,0 +1,85 @@
+body, html{ /*No caso do Parallax precisamos usar o html também como base para que ele ocupe 100# de sua altura*/
+    margin: 0;
+    font: 16px 'Lato', sans-serif;
+    height: 100%; /*Temos que deixar em 100% para que todo o conteúdo do body se expanda lá pra baixo também*/
+}
+
+.navbar-transparente{
+    padding: 15px 0;
+    background: rgb(41, 41, 41);
+}
+
+.conteudoParallax{
+    background: white;
+    padding: 50px;
+}
+
+.backgroundEscuro{
+    background: black;
+}
+
+.conteudoParallax2{
+    color: #fff;
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.imgCarousel{
+   width: 1920px;
+   height: 600px;
+   opacity: 0.4;
+}
+
+.img3imagens{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    margin: 80px 0 10px 0;  
+}
+
+.img3imagens:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    transition: all 1s;
+}
+
+.imgParallax, .imgParallax2{
+    position: relative;
+    height: 100%;
+    /*opacity: 0.4;*/
+    background-repeat: no-repeat; /*Em monitores maiores a imagem irá aparecer se repetindo, então esse comando evita isso*/
+    background-size: cover; /*Este comando lhe permite usar 100% da imagem em monitores maiores, aproveitando a imagem ao máximo*/
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.imgParallax{
+    background-image: url(../img/trilha-escuro.jpg);
+}
+
+.imgParallax2{
+    background-image: url(../img/treino-praia-escuro.png);
+}
+
+.conteudo-titulo{
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+}
+
+.backgroundFooter{
+    background: rgb(20, 20, 20)
+}
+
+.conteudo-titulo span.titulo{
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
